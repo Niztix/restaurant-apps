@@ -1,0 +1,41 @@
+@import 'main';
+
+@media (max-width: $medium) {
+    #hamburgerMenu {
+        display: inline-block;
+    }
+
+    nav .app-navigation {
+        position: absolute;
+        background-color: $primary;
+        top: 100%;
+        right: 100%;
+        width: 20rem;
+        color: #fff;
+        border-radius: 10px;
+        border: 2px solid #fff;
+
+        &.active {
+            top: 110px;
+            right: 0;
+        }
+
+        a {
+            display: block;
+            margin: 1.4rem;
+            padding: 0.4rem;
+            font-size: $fs-global;
+        }
+    }
+
+    .explore {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: $small) {
+    .explore {
+        grid-template-columns: 1fr;
+    }
+}

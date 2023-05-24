@@ -1,0 +1,25 @@
+@import 'main';
+
+.detail {
+    padding: 25px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px 16px;
+
+    img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.card__overview {
+    background-color: #fff;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+
+    .name__overview {
+        font-weight: bold;
+    }
+}

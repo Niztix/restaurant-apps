@@ -1,0 +1,90 @@
+/* typography */
+$fs-title: 1.8rem;
+$fs-global: 1.2rem;
+
+/* color */
+$primary: #4b9cff;
+$label: #3056ff;
+$body: #f0eff5;
+
+/* shadow */
+$shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+/* responsive */
+$small: 600px;
+$medium: 1000px;
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $body;
+}
+
+.content {
+    margin: 0 auto;
+    min-height: 100%;
+
+    h2 {
+        padding-top: 32px;
+        text-align: center;
+    }
+}
+
+.hero_section {
+    img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+}
+
+.like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db0000;
+
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+
+    &:focus {
+        top: 0;
+    }
+}

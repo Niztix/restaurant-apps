@@ -1,0 +1,46 @@
+@import 'main';
+
+.explore {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    position: relative;
+
+    .city {
+        color: #fff;
+        font-size: $fs-global;
+        top: 0;
+        left: 0;
+        padding: 0.5rem;
+        background-color: $label;
+        position: absolute;
+        border-radius: 10px 0 10px 0;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.details {
+    padding: 16px 8px 8px 8px;
+
+    h3 {
+        padding: 14px 0;
+    }
+
+    span {
+        font-weight: 300;
+    }
+}
