@@ -5,6 +5,12 @@
         display: inline-block;
     }
 
+    .hero_section {
+        img {
+            height: 30vh;
+        }
+    }
+
     nav .app-navigation {
         position: absolute;
         background-color: $primary;

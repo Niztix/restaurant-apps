@@ -5,6 +5,7 @@ import '../styles/sass/resto-card.scss';
 import '../styles/sass/responsive.scss';
 import '../styles/sass/footer.scss';
 import '../styles/sass/detail.scss';
+import '../styles/sass/hero.scss';
 import App from './views/app';
 import swRegister from './utils/sw-register';
 

@@ -6,7 +6,11 @@ const Home = {
     return `
       <div class="content">
         <section class="hero_section">
-          <img src="./images/heros/hero-image_4.jpg" alt="Hero image">
+          <picture>
+            <source type="image/webp" srcset="./images/heros/hero-image_4.webp">
+            <source type="image/jpeg" srcset="./images/heros/hero-image_4.jpg">
+            <img src="./images/heros/hero-image_4.jpg" alt="Hero image">
+          </picture>
         </section>
         <h2>Explore Restaurant</h2>
         <div id="resto" class="explore">

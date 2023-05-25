@@ -33,12 +33,12 @@ const createRestaurantDetailTemplate = (restaurant) => `
 `;
 
 const createRestaurantItemTemplate = (restaurant) => `
-      <a href="/#/detail/${restaurant.id}">
+      <a class="restoran-item" href="/#/detail/${restaurant.id}">
       <div class="card">
         <div class="city">${restaurant.city}</div>
         <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="Gambar suasana restaurant yang berada di ${restaurant.name}">
         <div class="details">
-          <h3>${restaurant.name}<span> | ⭐️ ${restaurant.rating}</span></h3>
+          <h3 class="restaurant_name">${restaurant.name}<span> | ⭐️ ${restaurant.rating}</span></h3>
         </div>
       </div>
       </a>
@@ -56,14 +56,9 @@ const createLikedButtonTemplate = () => `
   </button>
 `;
 
-const createMessageNotFoundRestaurant = () => `
-  <div class="restaurant-item_not_found">Anda belum menambahkan restaurant favorit</div>
-`;
-
 export {
   createRestaurantItemTemplate,
   createRestaurantDetailTemplate,
   createLikeButtonTemplate,
   createLikedButtonTemplate,
-  createMessageNotFoundRestaurant,
 };
