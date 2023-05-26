@@ -12,7 +12,7 @@ const Home = {
             <source type="image/webp" srcset="./images/heros/hero-image_4.webp">
             <source type="image/jpeg" srcset="./images/heros/hero-image_4.jpg">
             <source  media="(max-width: 700px)" srcset="./images/heros/hero-image_4-small.jpg">
-            <img class="lazyload" data-src="./images/heros/hero-image_4.jpg" alt="Hero image">
+            <img class="lazyload" src="./images/heros/hero-image_4.jpg" alt="Hero image">
           </picture>
         </section>
         <h2>Explore Restaurant</h2>
