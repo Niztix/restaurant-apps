@@ -1,5 +1,7 @@
 import RestaurantSource from '../../data/data-resource';
 import { createRestaurantItemTemplate } from '../templates/templates-creator';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const Home = {
   async render() {
@@ -9,7 +11,8 @@ const Home = {
           <picture>
             <source type="image/webp" srcset="./images/heros/hero-image_4.webp">
             <source type="image/jpeg" srcset="./images/heros/hero-image_4.jpg">
-            <img src="./images/heros/hero-image_4.jpg" alt="Hero image">
+            <source  media="(max-width: 700px)" srcset="./images/heros/hero-image_4-small.jpg">
+            <img class="lazyload" data-src="./images/heros/hero-image_4.jpg" alt="Hero image">
           </picture>
         </section>
         <h2>Explore Restaurant</h2>
