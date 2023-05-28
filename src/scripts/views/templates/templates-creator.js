@@ -38,7 +38,7 @@ const createRestaurantItemTemplate = (restaurant) => `
       <a class="restoran-item" href="/#/detail/${restaurant.id}">
       <div class="card">
         <div class="city">${restaurant.city}</div>
-        <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="Gambar suasana restaurant yang berada di ${restaurant.name}">
+        <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="Gambar suasana restaurant yang berada di ${restaurant.name}">
         <div class="details">
           <h3 class="restaurant_name">${restaurant.name}<span> | ⭐️ ${restaurant.rating}</span></h3>
         </div>
