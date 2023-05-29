@@ -9,10 +9,10 @@ const Home = {
       <div class="content">
         <section class="hero_section">
           <picture>
-            <source type="image/webp" srcset="./images/heros/hero-image_4.webp">
-            <source type="image/jpeg" srcset="./images/heros/hero-image_4.jpg">
-            <source  media="(max-width: 700px)" srcset="./images/heros/hero-image_4-small.jpg">
-            <img class="lazyload" src="./images/heros/hero-image_4.jpg" alt="Hero image">
+            <source type="image/webp" media="(min-width: 700px)" srcset="/images/heros/hero-image_4-large.webp">
+            <source type="image/jpeg" media="(min-width: 700px)" srcset="/images/heros/hero-image_4-large.jpg">
+            <source type="image/webp" srcset="/images/heros/hero-image_4.webp">
+            <img class="lazyload" src="/images/heros/hero-image_4.jpg" alt="Hero image">
           </picture>
         </section>
         <h2>Explore Restaurant</h2>
